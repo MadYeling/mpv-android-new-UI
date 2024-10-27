@@ -1,39 +1,16 @@
-# mpv for Android
+# mpv for Android UI优化自用版
 
-[![Build Status](https://github.com/mpv-android/mpv-android/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/mpv-android/mpv-android/actions/workflows/build.yml)
 
-mpv-android is a video player for Android based on [libmpv](https://github.com/mpv-player/mpv).
+* mpv-android 是一个基于 [libmpv](https://github.com/mpv-player/mpv) 的视频播放器
+* 本分支根据原版 mpv-android 修改了UI及其操作逻辑，自用
+* 修改过包名，可以与原版 mpv-android 共存
 
-## Features
+## 下载
 
-* Hardware and software video decoding
-* Gesture-based seeking, volume/brightness control and more
-* libass support for styled subtitles
-* Secondary (or dual) subtitle support
-* High-quality rendering with advanced settings (scalers, debanding, interpolation, ...)
-* Play network streams with the "Open URL" function
-* Background playback, Picture-in-Picture, keyboard input supported
+你可以从[Release](https://github.com/MadYeling/mpv-android-new-UI/releases)中下载apk（如果有的话）
 
-### Library?
+## 从源码构建
 
-mpv-android is **not** a library/module (AAR) you can import into your app.
+请阅读`buildscripts`文件夹中的 [README](buildscripts/README.md)。
 
-If you'd like to use libmpv in your app you can use our code as inspiration.
-The important parts are [`MPVLib`](app/src/main/java/is/xyz/mpv/MPVLib.java), [`BaseMPVView`](app/src/main/java/is/xyz/mpv/BaseMPVView.kt) and the [native code](app/src/main/jni/).
-Native code is built by [these scripts](buildscripts/).
-
-## Downloads
-
-You can download mpv-android from the [Releases section](https://github.com/mpv-android/mpv-android/releases) or
-
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=is.xyz.mpv)
-
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/is.xyz.mpv)
-
-**Note**: Android TV is supported, but only available on F-Droid or by installing the APK manually.
-
-## Building from source
-
-Take a look at the [README](buildscripts/README.md) inside the `buildscripts` directory.
-
-Some other documentation can be found at this [link](http://mpv-android.github.io/mpv-android/).
+一些其它文档可以从 mpv-android 原本仓库中获取 [link](http://mpv-android.github.io/mpv-android/).
